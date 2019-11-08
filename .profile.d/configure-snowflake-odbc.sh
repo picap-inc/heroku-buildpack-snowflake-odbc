@@ -8,7 +8,7 @@ echo "[snowflake]
 picapodbc1 = Snowflake
 
 [picapodbc1]
-Driver      = /app/.apt/usr/lib/snowflake/odbc/lib/libSnowflake.so
+Driver      = SnowflakeDSIIDriver
 Description = Picap ODBC
 uid         = ${SNOWFLAKE_UID}
 server      = ${SNOWFLAKE_ACCOUNT}.snowflakecomputing.com
