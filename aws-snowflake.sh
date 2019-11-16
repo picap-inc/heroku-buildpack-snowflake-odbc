@@ -1,8 +1,7 @@
 #!/bin/bash
 
-export ODBCSYSINI=/usr/lib/snowflake/odbc/lib/
+export ODBCSYSINI=${HOME}
 
-mkdir -p /etc
 echo "[snowflake]
 [ODBC Data Sources]
 picapodbc1 = Snowflake
