@@ -1,7 +1,5 @@
 #!/bin/bash
-
-export ODBCSYSINI=${HOME}
-
+echo "" > /etc/odbc.ini
 echo "[snowflake]
 [ODBC Data Sources]
 picapodbc1 = Snowflake
@@ -18,4 +16,4 @@ role        = ${SNOWFLAKE_ROLE}
 PORT=443
 SSL=on
 CLIENT_SESSION_KEEP_ALIVE=true
-" > ${ODBCSYSINI}/odbc.ini
+" > /etc/odbc.ini
