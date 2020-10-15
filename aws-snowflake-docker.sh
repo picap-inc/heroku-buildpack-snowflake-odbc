@@ -1,8 +1,5 @@
 #!/bin/bash
 
-export ODBCSYSINI=/usr/lib/snowflake/odbc/lib/
-
-mkdir -p /etc
 echo "[snowflake]
 [ODBC Data Sources]
 picapodbc1 = Snowflake
@@ -14,9 +11,9 @@ uid         = ${SNOWFLAKE_UID}
 server      = ${SNOWFLAKE_ACCOUNT}.snowflakecomputing.com
 database    = ${SNOWFLAKE_DATABASE}
 schema      = ${SNOWFLAKE_SCHEMA}
-warehouse   = ${SNOWFLAKE_WHAREHOUSE}
+warehouse   = ${SNOWFLAKE_WAREHOUSE}
 role        = ${SNOWFLAKE_ROLE}
 PORT=443
 SSL=on
 CLIENT_SESSION_KEEP_ALIVE=true
-" > ${ODBCSYSINI}/odbc.ini
+" > /usr/lib/snowflake/odbc/lib/odbc.ini
